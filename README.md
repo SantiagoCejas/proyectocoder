@@ -16,6 +16,6 @@ CoderHouse React Course Project - October - November 2021 - For educational Prop
 
 **Client:** React
 
-**Server:** Node
+**Server:** Node Js
 
   

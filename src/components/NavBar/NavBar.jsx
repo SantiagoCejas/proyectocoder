@@ -8,22 +8,28 @@ import Categories from '../../db/Categories'
 const NavBar = () => {
     return (
         <>
-        <header className="header">
-          <nav className ="navbar">
-            <div>
-              <img className="logo" src="https://image.flaticon.com/icons/png/128/1200/1200967.png"/>
-            </div>
-            <div>
-          {Categories.map((cat) => {
-            return (
-              <div className="itemNav" key={cat.grape}>
-    
-              <NavLink to={cat.url} exact activeClassName="activeClass">
-                  {cat.grape}
-                </NavLink>
-              </div>
+        <header>
+          <nav className ="navbar navbar-expand-lg navbar-light-disabled-color">
+            <div class="container-fluid">
+                <Link path to="/">
+                  <div className="navbar-brand">
+                    <img src="https://image.flaticon.com/icons/png/128/1200/1200967.png"/>
+                  </div>
+                </Link>
+             <div>
+              {Categories.map((cat) => {
+                return (
+                  <>
+                    <div className="nav-item" key={cat.grape}>
+                      <NavLink to={cat.url} activeClassName="activeClass"> {cat.grape}</NavLink>
+                    </div>
+                  </>
             );
           })}
+            </div>
+        </div>
+        <div>
+          <CartWidget/>
         </div>
        </nav>
         </header>

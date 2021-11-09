@@ -77,10 +77,10 @@ body{
   margin-top: 3rem;
   padding: 2rem 2rem 2rem 2rem;
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
-  justify-content: space-between;
-  align-content: center;
+  justify-items: stretch;
+  align-items: center;
   background: #ffffff;
   width: 50%;
   border-radius: 10%; 
@@ -149,4 +149,14 @@ p{
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+.activeClass{
+  color:chartreuse;
+  font-weight: bold;
+}
+.navbar{
+  display: inline-flex;
+}
+.card{
+  width: 18rem;
 }

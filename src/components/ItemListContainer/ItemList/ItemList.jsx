@@ -7,10 +7,14 @@ const ItemList=({productos}) => {
     return (
         <>
             <div>
+                <div>
+                    <div className="card-body">
                 {productosStock.map((producto) =>
-                    <Item key={producto.id} name={producto.name} grape={producto.grape} price={producto.price} image={producto.image}/>
+                    <Item key={producto.id} name={producto.name} grape={producto.category} price={producto.price} image={producto.image}/>
                                 )
                 } 
+                </div>
+              </div>
             </div>
         </>)
 }

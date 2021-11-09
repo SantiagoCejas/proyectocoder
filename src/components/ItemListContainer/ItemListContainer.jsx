@@ -6,9 +6,9 @@ import { useParams } from 'react-router'
 import Categories from '../../db/Categories'
 
 
-const ItemListContainer = ({ }) => {
+    const ItemListContainer = ({category}) => {
     const [items, setItems] = useState([]);
-    const { catId } = useParams();
+    const { categoryId } = useParams();
   
     useEffect(() => {
       const getItems = new Promise((resolve) => {
@@ -18,9 +18,9 @@ const ItemListContainer = ({ }) => {
       });
   
       getItems.then((res) => {
-        catId ? setItems(res.filter((i) => i.category === catId)) : setItems(res);
+        categoryId ? setItems(res.filter((i) => i.category === categoryId)) : setItems(res);
       });
-    }, [catId]);
+    }, [categoryId]);
   
     return (
       <>

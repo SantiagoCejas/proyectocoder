@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+li{
+  list-style: none;
+}
+body{
+  background-color: black;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  background-color: #3d0101;
+  width: 100%;
+  justify-content: space-around;
+}
+.links{
+  color: #ffffff;
+  text-decoration: none;
+}
+.carrito{
+  max-width: 80px;
+  margin-top: 1rem;
+  display:inline-flexbox;
+}
+.sliderHome {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background: url(../src/media/copa_toneles.jpg);
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 75vh;
+  padding: 1rem 1rem 1rem 1rem;
+  max-height: 50vh; 
+}
+.contenedorProducto{
+  margin-top: 3rem;
+  padding: 2rem 2rem 2rem 2rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  align-content: center;
+  background: #ffffff;
+  width: 50%;
+  border-radius: 10%; 
+}
+.contenedorProducto img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: cover;
+  position: center;
+  border-radius: 10%;
+  width: 50%;
+  align-self: center; 
+}
+
+.contenedorProducto h3 {
+  padding: 1rem 1rem 1.5rem 1rem;
+  align-self: center;
+  max-width: 100%;
+  font-weight: 500; 
+}
+.logo{
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.detalleHome{
+  background-image: url(../src/media/corchos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding: 0;
+}
+h2{
+  color: #ffffff;
+}
+h3{
+  color:#ffffff;
+  font-size: 2rem
+}
+p{
+  color:#ffffff;
+  font-size: 1.5rem;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  background-color: #3d0101;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.imgLogo{
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.itemNav{
+  justify-content: space-around;
+  align-content: space-around;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}

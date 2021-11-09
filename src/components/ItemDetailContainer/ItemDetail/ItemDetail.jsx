@@ -1,18 +1,14 @@
 import React from 'react'
-import productosStock from '../../../db/ProductosStock'
 
-const ItemDetail = ({name, grape, price, image})=> {
+const ItemDetail = ({name, image, price}) => {
     return (
+        <>
         <div>
-            <div>
-                <img src={image} alt={name} />
-            </div>
-            <div>
-                <h3>{name}</h3>
-                <p>{grape}</p>
-                <p>${price}</p>
-            </div>
+        <h1>{name}</h1>
+        <img src={image} alt={name} />
+        <p>$ {price}</p>
         </div>
+      </>
     )
 }
 

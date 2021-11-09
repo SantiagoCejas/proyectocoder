@@ -3,7 +3,7 @@ import React from 'react'
 const CartWidget = () => {
     return (
         <div>
-            <p>LogoCarrito</p>
+            <img className="carrito" src="https://image.flaticon.com/icons/png/512/1082/1082925.png" alt="Carrito de compras"/>
         </div>
     )
 }

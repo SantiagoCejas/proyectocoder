@@ -1,33 +1,35 @@
-import React, {useState, useEffect,} from 'react'
+import React,{useState, useEffect} from 'react'
 import ItemDetail from './ItemDetail/ItemDetail'
-import productosStock from '../../../db/ProductosStock'
-
+import productosStock from '../../db/ProductosStock'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
-    const [productosDetalle, setProductosDetalle] = useState()
-    const [cargando, setCargando] = useState (true)
-    
-    useEffect (()=>{
-        const listaProductos = new Promise ((res, rej) => {
-            setTimeout (()=>{
-                res(productosStock)
-            },1000)
-        })
-        listaProductos.then((productosStock) =>{
-            setProductosDetalle(productosStock)
-            setCargando(false)
-        })
-        
-        },[productosDetalle])
-    
-        return (
-            <div>
-                {cargando ? <p>Cargando Productos</p>:  <ItemDetail productos{...productos} />}
-            </div>
-        )
-    }
+    const [item, setItem] = useState({});
+    const [loader, setLoader] = useState(true);
+    const { id } = useParams();
 
-
-    //No mapear, sino crear buscador
+    useEffect(() => {
+        setLoader(true);
+        const getItems = new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(productosStock);
+          }, 500);
+        });
+        /*useEffect(() => {
+            effect
+            return () => {
+                cleanup
+            }
+        }, [input])*/
+    
+        getItems
+          .then((res) => {
+            setItem(res.find((i) => i.id === id));
+          })
+          .finally(() => setLoader(false));
+      }, [id]);
+    
+      return loader ? <h3>Cargando...</h3> : <ItemDetail {...item} />;
+    };
 
 export default ItemDetailContainer

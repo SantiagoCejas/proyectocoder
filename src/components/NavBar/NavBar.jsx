@@ -1,21 +1,34 @@
 import React from 'react'
 import CartWidget from './CartWidget/CartWidget'
-import { NavLink, Link } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Routes, Route } from 'react-router-dom'
+import Categories from '../../db/Categories'
 
-export const NavBar = () => {
+
+
+const NavBar = () => {
     return (
-        <div>
+        <>
+        <header className="header">
+          <nav className ="navbar">
             <div>
-                <CartWidget/>
+              <img className="logo" src="https://image.flaticon.com/icons/png/128/1200/1200967.png"/>
             </div>
             <div>
-                <p>Home</p>
-                <p>Productos</p>
-                <p>Nosotros</p>
-            </div>
-            <div>
-                
-            </div>
+          {Categories.map((cat) => {
+            return (
+              <div className="itemNav" key={cat.grape}>
+    
+              <NavLink to={cat.url} exact activeClassName="activeClass">
+                  {cat.grape}
+                </NavLink>
+              </div>
+            );
+          })}
         </div>
-    )
-}
+       </nav>
+        </header>
+      </>
+      
+      );
+    };
+    export default NavBar

@@ -18,4 +18,6 @@ CoderHouse React Course Project - October - November 2021 - For educational Prop
 
 **Server:** Node Js
 
+**Dependencies:** React 17.0.02, React-dom 17.0.02, React-router-dom 6.0.1
+
   

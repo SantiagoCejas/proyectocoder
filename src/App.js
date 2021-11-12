@@ -1,34 +1,28 @@
-import React  from 'react';
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'; 
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
+import { NavBar } from './components/NavBar/NavBar';
+import style from './style.css';
 
-function App() {
+export default function App() {
   return (
     <>
-    <BrowserRouter>
-      <div className="menu">
-          <NavBar/>
-      </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <ItemListContainer
-             />}
-          />
-        <Route
-          path="/category/:categoryId" //Dos puntos implica que es un parámetro
-          element={<ItemListContainer/>}
-        />
-        <Route path="/item/:productosStock.id" element={<ItemDetailContainer/>} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
 
-  </>
+        <Routes>
+          <Route
+            path="/"
+            element={<ItemListContainer greeting={'Todos los productos'} />}
+          />
+          <Route
+            path="/category/:catId"
+            element={<ItemListContainer greeting={'Encontrá el vino que estas buscando'} />}
+          />
+          <Route path="/item/:id" element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
-
-export default App;

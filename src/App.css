@@ -150,13 +150,3 @@ p{
   display: flex;
   flex-direction: row;
 }
-.activeClass{
-  color:chartreuse;
-  font-weight: bold;
-}
-.navbar{
-  display: inline-flex;
-}
-.card{
-  width: 18rem;
-}

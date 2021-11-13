@@ -6,7 +6,7 @@ import categories from './../../db/categories'
 export const NavBar = () => {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
       <Link className="navbar-brand" to="/"><img src="https://cdn-icons-png.flaticon.com/512/683/683981.png" alt="WineClub" width="90" height="65"/></Link>
 
@@ -17,7 +17,7 @@ export const NavBar = () => {
               to={cat.address}
               style={({ isActive }) => {
                 return {
-                  color: isActive && 'rgb(79, 151, 19)',
+                  color: isActive && 'white',
                   fontSize: isActive && '25px',
                   flexDirection: isActive && 'column',
                 };

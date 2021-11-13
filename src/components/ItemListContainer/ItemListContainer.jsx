@@ -23,7 +23,7 @@ export const ItemListContainer = ({ greeting }) => {
 
   return (
     <>
-      <h3 style={{ textAlign: 'center' }}>{greeting}</h3>
+      <h3 className="title">{greeting}</h3>
       <ItemList items={items} />
     </>
   );

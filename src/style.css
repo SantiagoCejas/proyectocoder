@@ -1,12 +1,37 @@
-.card-img-top{
-    max-width: 15%;
-  }
-  .img-fluid {
-  max-width: 30%;
-  max-height: 30%;
-  }
-  .card{
-    max-width: 30%;
+.card{
+    max-width: 50%;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
   }
+.img-detail{
+  max-width: 50%;
+}
+.navbar{
+  background-color:#5e1224;
+}
+.card{
+  background-image:url('media/corchos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-img-top{
+  max-height: 30%;
+}
+
+body{
+  background-color:#000000;
+}
+.title{
+  font-size: 2.5rem;
+  color:#ffffff;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color:#ffffff
+}
+.productsContainer{
+display: grid;
+grid-template-columns: auto auto auto ;
+grid-template-rows: auto;
+}

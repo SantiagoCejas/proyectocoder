@@ -1,11 +1,10 @@
+/*camelCase categorías propias, otras importadas Bootstrap*/
+
 .card{
     max-width: 50%;
     padding: 1rem 1rem 1rem 1rem;
     margin: 1rem 1rem 1rem 1rem;
   }
-.img-detail{
-  max-width: 50%;
-}
 .navbar{
   background-color:#5e1224;
 }
@@ -13,6 +12,7 @@
   background-image:url('media/corchos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  max-height: 450px;
 }
 .card-img-top{
   max-height: 30%;
@@ -34,4 +34,34 @@ a{
 display: grid;
 grid-template-columns: auto auto auto ;
 grid-template-rows: auto;
+}
+.carrito{
+  max-height: 80px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.detailContainer{
+  display: grid;
+  grid-template-columns: 1fr 1.75fr;
+  grid-template-rows: auto;
+  padding:2rem 2rem 2rem 2rem;
+}
+.imgDetail{
+  justify-items: center;
+  background-image:url('media/corchos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin:1rem 1rem 1rem 1rem;
+  padding:1rem 1rem 1rem 1rem;
+}
+.productInfo{
+  margin:1rem 1rem 1rem 1rem;
+  padding:1rem 1rem 1rem 1rem;
+}
+.nameDetail{
+  color:#ffffff;
+}
+.priceDetail{
+  color: #ffffff;
+  font-style: italic;
 }

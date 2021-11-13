@@ -13,7 +13,7 @@ export const data = [
     },
     {
       id: '2',
-      name: 'Domiciano cosecha noctura',
+      name: 'Domiciano cosecha nocturna',
       category: 'CabernetFranc',
       grape: 'Cabernet Franc',
       price: 1200,

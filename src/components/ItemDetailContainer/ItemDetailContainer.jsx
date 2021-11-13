@@ -23,5 +23,5 @@ export const ItemDetailContainer = () => {
       .finally(() => setLoader(false));
   }, [id]);
 
-  return loader ? <img  src="https://c.tenor.com/tEBoZu1ISJ8AAAAC/spinning-loading.gif" alt={"loading"}/> : <ItemDetail {...item} />;
+  return loader ? <img  src="https://acegif.com/wp-content/uploads/loading-25.gif" alt={"loading"}/> : <ItemDetail {...item} />;
 };

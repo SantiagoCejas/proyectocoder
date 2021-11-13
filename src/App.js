@@ -10,7 +10,6 @@ export default function App() {
     <>
       <BrowserRouter>
         <NavBar />
-
         <Routes>
           <Route
             path="/"

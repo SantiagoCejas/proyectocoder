@@ -6,32 +6,29 @@ export const ItemDetail = ({ id, name, image, price, grape, desc }) => {
 
   ) : (
     <>
-    <div className="container px-4">
-      <div>
-        <div className="col">
-          <div className="row">
-            <img className="img-fluid img-detail" src={image} alt={name} />
-          </div>
-        </div>
+    <div className="detailContainer">
+      <div className="imgDetail">
+        <img className="img-fluid img-detail" src={image} alt={name} />
       </div>
-      <div>
-        <div className="col">
-          <div className="row">
-            <h3> {grape}</h3>
-          </div>
-          <div className="row">
-            <h1>{name}</h1>
-          </div>
-          <div className="row">
-            <h3>${price}</h3>
-          </div>
-          <div className="row">
-            <p>{desc}</p>
-          </div>
+      <div className="productInfo">
+        <div className="row">
+          <h3> {grape}</h3>
         </div>
+        <div className="row">
+          <h1 className="nameDetail">{name}</h1>
+        </div>
+        <div className="row">
+          <p>{desc}</p>
+        </div>
+        <div className="row">
+          <h3 className="priceDetail">${price}</h3>
+        </div>
+        <button className="btn btn-light">
+          Comprar
+        </button>
       </div>
-    </div>
 
+    </div>
     </>
   );
 };

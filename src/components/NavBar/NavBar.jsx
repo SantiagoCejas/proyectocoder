@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import categories from './../../db/categories';
 import CartWidget from './CartWidget/CartWidget'
-import Slider from '../Slider/Slider';
 
 
 export const NavBar = () => {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ItemList } from './ItemList/ItemList';
 import { data } from '../../db/data';
 import { useParams } from 'react-router-dom';
+import Slider from './Slider/Slider';
 
 export const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([]);

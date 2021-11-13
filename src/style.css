@@ -6,13 +6,11 @@
   background-image:url('media/corchos.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-height: 600px;
   padding: 1rem 1rem 1rem 1rem;
   margin: 1rem 1rem 1rem 1rem;
 }
 .card-img-top{
   padding: 1rem 1rem 1rem 1rem;
-max-height: 400px;
 }
 
 body{

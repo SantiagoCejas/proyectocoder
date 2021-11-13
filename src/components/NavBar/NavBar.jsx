@@ -11,7 +11,7 @@ export const NavBar = () => {
     <>
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
-      <Link className="navbar-brand" to="/"><img src="https://cdn-icons-png.flaticon.com/512/683/683981.png" alt="WineClub" width="90" height="65"/></Link>
+      <Link className="navbar-brand" to="/"><img src="https://cdn-icons-png.flaticon.com/512/683/683981.png" alt="WineClub"width="90" height="90"/></Link>
 
       {categories.map((cat) => {
         return (

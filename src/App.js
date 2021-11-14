@@ -20,6 +20,7 @@ export default function App() {
             element={<ItemListContainer greeting={'Encontrá el vino que estas buscando'} />}
           />
           <Route path="/item/:id" element={<ItemDetailContainer />} />
+          <Route path="/cart" element={<p>Carrito vacío</p>} />
         </Routes>
       </BrowserRouter>
     </>

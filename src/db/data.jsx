@@ -10,7 +10,8 @@ export const data = [
       image:
         'https://d2r9epyceweg5n.cloudfront.net/stores/001/108/127/products/cordero-con-piel-de-lobo-byb1-4cd59f1fbbba0836bc15840496794094-1024-1024.png',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    },
+      stock:10,
+        },
     {
       id: '2',
       name: 'Domiciano cosecha nocturna',
@@ -21,7 +22,7 @@ export const data = [
       Vineyard: 'Domiciano',
       image:'https://www.vintagevinoteca.com.ar/image/cache/catalog/VINOS_BOTELLA/DOMICIANO/DOMICIANO%20COSECHA%20NOCTURNA%20CABERNET%20SAUVIGNON-651x800.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:15,
     },
     {
       id: '3',
@@ -33,7 +34,7 @@ export const data = [
       Vineyard: 'Circus Wines',
       image:'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/060/830/products/jocen-equilibrista1-d08dde5d1eb75b48f016098539429716-1024-1024.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:20
     },
     {
       id: '4',
@@ -45,7 +46,7 @@ export const data = [
       Vineyard: 'Natural Vineyard',
       image:'https://cdn.shopify.com/s/files/1/0528/9535/0961/products/WV000153.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:5
     },
     {
       id: '5',
@@ -58,7 +59,8 @@ export const data = [
       image:
         'https://cdn.shopify.com/s/files/1/2572/9722/products/2018ErnestoCatenaPadrillosMalbec_700x.png?v=1596705409',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    },
+    stock:25,
+      },
     {
       id: '6',
       name: 'Sapo de otro pozo',
@@ -69,7 +71,7 @@ export const data = [
       Vineyard: 'Mosquita Muerta Wines',
       image:'https://d3ugyf2ht6aenh.cloudfront.net/stores/001/240/598/products/sapo-de-otro-pozo1-dbac2b3c9b1092da5615935309004013-1024-1024.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:18,
     },
     {
       id: '7',
@@ -82,7 +84,7 @@ export const data = [
       image:
         'http://d3ugyf2ht6aenh.cloudfront.net/stores/001/129/394/products/la-mala-maria-cabernet-franc1-b30a69d109432b7ee015870659445094-640-0.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:12,
     },
     {
       id: '8',
@@ -95,7 +97,7 @@ export const data = [
       image:
         'https://cdn.shopify.com/s/files/1/0528/9535/0961/products/WV000206_1200x1200.png?v=1622123438',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:23,
     },
     {
       id: '9',
@@ -107,7 +109,7 @@ export const data = [
       Vineyard: 'Ruben Ruffo',
       image:'https://armivinos.com.ar/wp-content/uploads/2021/06/ALAMBRADO-CABERNET-FRANC.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:10,
     },
     {
       id: '10',
@@ -120,7 +122,7 @@ export const data = [
       image:
         'https://images.vivino.com/thumbs/bS1pUTYeS4OUgtfeiTSBPw_pb_600x600.png',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:12,
     },
     {
       id: '11',
@@ -133,7 +135,7 @@ export const data = [
       image:
         'https://images.vivino.com/thumbs/3kJhqqIvS1WMywLe0bqmkw_pb_600x600.png',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:3,
     },
     {
       id: '12',
@@ -146,7 +148,7 @@ export const data = [
       image:
       'http://files.123inventatuweb.com/30/63/3063c5f3-d9f7-4b58-bedc-4b66f4fd2185.jpg',
       desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit nemo, ex voluptatum, earum, autem quas eius aperiam quod tempora porro sequi delectus.',
-    
+    stock:8,
     },
   ];
   

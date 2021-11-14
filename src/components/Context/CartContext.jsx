@@ -22,7 +22,7 @@ const CartFuncion = ({children}) =>{
                 return item
             })
             setCart(cartAux)
-            setTotal(total+(producto.precio*cantidad))
+            setTotal(total+(producto.price*cantidad))
         }
     } 
     

@@ -7,8 +7,12 @@ import { Context } from '../../Context/CartContext';
 export const ItemDetail = ({ id, name, image, price, grape, desc, stock }) => {
 
   const [buy, setBuy] = useState (false)
+  const {onAdd} = useContext(Context)
+
+
   const toCart = (props) =>{
     setBuy(true)
+    onAdd({id, name, price,image}, props.unidades)
     alert(`agregaste ${props.unidades} unidades a tu carrito`)
   }
   return !id ? (

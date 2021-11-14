@@ -9,11 +9,11 @@ const Cart = ()=>{
         <p>El total del carrito es {total} y tenes {unidades} unidades</p>
         {cart.map((item)=>
             <div>
-                <h2>nombre:{item.name}</h2>
-                <h2>precio:{item.price}</h2>
-                <h2>cantidad:{item.cantidad}</h2>
-                <h2>subtotal:{item.subtotal}</h2>
-                <button>{item.id}</button>  
+                <img src={item.image}/>
+                <h2>Nombre:{item.nombre}</h2>
+                <h2>Precio:$ {item.precio}</h2>
+                <h2>Cantidad:{item.cantidad}</h2>
+                <h2>Subtotal:{item.subtotal}</h2> 
             </div>
             )}
         </>

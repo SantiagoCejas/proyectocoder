@@ -10,7 +10,7 @@ const CartFuncion = ({children}) =>{
     const onAdd = (producto, cantidad) =>{
         const itemExiste=cart.find(item=>item.id===producto.id)
         if(!itemExiste){
-            setCart([...cart, {id:producto.id, nombre:producto.name, precio:producto.price, cantidad:cantidad, subtotal:(producto.price*cantidad)}])
+            setCart([...cart, {id:producto.id,image:producto.image, nombre:producto.name, precio:producto.price, cantidad:cantidad, subtotal:(producto.price*cantidad)}])
             setTotal(total+(producto.price*cantidad))
             setUnidades(unidades+1)
         } else {
@@ -18,6 +18,7 @@ const CartFuncion = ({children}) =>{
                 if(item.id===producto.id){
                     item.cantidad+=cantidad
                     item.subtotal+=(producto.price*cantidad)
+                    item.image=producto.image
                 }
                 return item
             })
@@ -25,12 +26,14 @@ const CartFuncion = ({children}) =>{
             setTotal(total+(producto.price*cantidad))
         }
     } 
-    
+
     return <Context.Provider value={{cart, unidades, total, onAdd}}>
         {children}
     </Context.Provider>
 
     }
+
+
 
 
 export {CartFuncion, Context }

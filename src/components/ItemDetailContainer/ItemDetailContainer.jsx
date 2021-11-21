@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { ItemDetail } from './ItemDetail/ItemDetail';
 import { data } from '../../db/data';
 import { useParams } from 'react-router-dom';
+import db from '../firebase/firebase';
+import { doc, getDoc } from 'firebase/firestore';
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState({});
@@ -10,18 +12,24 @@ export const ItemDetailContainer = () => {
 
   useEffect(() => {
     setLoader(true);
-    const getItems = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(data);
-      }, 1000);
-    });
 
-    getItems
+    const myItem = doc(db, 'products', id);
+    getDoc(myItem)
       .then((res) => {
-        setItem(res.find((i) => i.id === id));
+        const result = { id: res.id, ...res.data() };
+        setItem(result);
       })
-      .finally(() => setLoader(false));
+      .finally(() => {
+        setLoader(false);
+      });
   }, [id]);
 
-  return loader ? <img  src="https://acegif.com/wp-content/uploads/loading-25.gif" alt={"loading"}/> : <ItemDetail {...item} />;
+  return loader ? (
+    <img
+      src="https://acegif.com/wp-content/uploads/loading-25.gif"
+      alt={'loading'}
+    />
+  ) : (
+    <ItemDetail {...item} />
+  );
 };
